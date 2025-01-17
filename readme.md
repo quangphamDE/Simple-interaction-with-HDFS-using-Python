@@ -1,4 +1,9 @@
 
+# Simple interaction with HDFS using Python
+
+This repository provides a simple way to interact with HDFS using Python and the hdfs library
+
+
 ## Run Locally
 
 Clone the repository
@@ -35,3 +40,13 @@ I will update later :D
 
 Then you can run file hadoop-python-tutorial.ipynb to see how it work
 
+
+## FAQ
+
+#### Why do you need to run the changeIP script?
+
+Because it will change extra_hosts in docker-compose.yml. This will avoid HTTPConnectionPool error 
+
+#### Why I run docker-compose first, then run changeIP, and finally restart the Docker container?
+
+Because I'm new to Bash and Docker, I don't know how to change extra_hosts automatically, so I do it this way :D
