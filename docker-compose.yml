@@ -18,7 +18,7 @@ services:
       - hbase
     # Add this to interact with namenode (like upload)
     extra_hosts:
-      - localhost:172.18.0.3
+      - localhost:172.18.0.2
 
   datanode:
     image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
@@ -35,7 +35,7 @@ services:
     ports:
       - 9864:9864
     extra_hosts:
-      - localhost:172.18.0.3
+      - localhost:172.18.0.2
   
 volumes:
   hadoop_namenode:
